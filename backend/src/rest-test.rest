@@ -1,0 +1,16 @@
+# GET http://localhost:3000/books
+
+
+GET http://localhost:3000/orders
+
+
+# POST http://localhost:3000/books HTTP/1.1
+# Content-Type: application/json
+
+# {
+#   "title": "Firaol has all the beard",
+#   "author": "Fikernew",
+#   "price": 1
+# }
+
+# DELETE http://localhost:3000/books/27

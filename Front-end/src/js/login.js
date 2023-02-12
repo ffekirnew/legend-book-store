@@ -1,18 +1,36 @@
-const API = `http://localhost:3000/books/`;
+const form = document.getElementById("form");
+const usernameInput = document.getElementById("user-name");
+const passwordInput = document.getElementById("password");
 
-document.getElementById("form").addEventListener("submit", function (event) {
-  event.preventDefault();
+form.addEventListener("submit", async (event) => {
+    event.preventDefault();
 
-  let userName = document.getElementById("user-name").value;
-  let passWord = document.getElementById("password").value;
+    let result;
 
-  fetch(
-    API,
-    {
-      method: "POST",
-      body: JSON.stringify({ username: userName, password: passWord }),
+    const response = await fetch("http://localhost:3000/auth/login", {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(
+            {
+                "username": usernameInput.value,
+                "password": passwordInput.value
+            }
+        ),
+        })
+        .then(response => response.json())
+        .then(data => {
+            result = data;
+        });
+
+    if ( !(result) ) {
+        console.log("Error");
+        
+    } else {
+        console.log(result);
+        document.cookie = `access_token=${result.accesToken}`;
+        let red = document.getElementById('redirect');
+        red.click();
     }
-      .then((response) => response.json())
-      .then((response) => console.log(response))
-  );
-});
+  });
