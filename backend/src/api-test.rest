@@ -1,0 +1,70 @@
+# GET /books Returns all books
+# GET http://localhost:3000/books HTTP/1.1
+
+# GET /books/:id returns a specific book by its ID
+# GET http://localhost:3000/books/2 HTTP/1.1
+
+# GET /books?searchKey=key returns all books matching the key ‘key’
+
+# POST /books creates a new book
+# POST http://localhost:3000/books/ HTTP/1.1
+# content-type: application/json
+
+# {
+#   "title": "Atomic Habits",
+#   "author": "James Clear",
+#   "category": "Personal Development",
+#   "backgroundStory": "James Clear, an expert on habit formation, reveals practical strategies that will teach you how to form good habits, break bad ones, and master the tiny behaviors that lead to remarkable results. He draws on proven ideas from biology, psychology, and neuroscience to create an easy-to-understand guide for making good habits inevitable and bad habits impossible.",
+#   "exampleQuote": "Time magnifies the margin between success and failure. It will multiply whatever you feed it. Good habits make time your ally. Bad habits make time your enemy.",
+#   "synopsis": "Learn about the easy and proven way to build good habits and break the bad ones. What’s a habit? If someone were to ask you about your daily habits, you might need some time to think about them. That’s because a habit, by definition, is an act that you perform automatically by instinct. Like when you walk into a dark room, you instinctively turn on a light switch, right? Habits are actions you don’t even have to think about, which is why you might not realize how a small daily action can have a powerful effect on your life. If you’re saving a dollar a day or smoking a cigarette a day, these actions may not seem like much now, but twenty years from now, those habits can either make you rich or, unfortunately, kill you. That’s why it’s important to understand how habits are formed, so you can learn how to kick the bad habits, implement the healthy ones, and take back control of your life.",
+#   "price": "ETB200",
+#   "coverImageUrl": "",
+# }
+
+# PUT /books/:id updates a specific book
+# PUT http://localhost:3000/books/40 HTTP/1.1
+# content-type: application/json
+
+# {
+#   "title": "Legend of The Fall -- 4",
+#   "author": "At the dorm",
+#   "price": 5
+# }
+
+# DELETE /books/:id deletes a specific book
+# DELETE http://localhost:3000/books/18 HTTP/1.1
+
+# DELETE /books/:id deletes a specific book
+
+
+# POST http://localhost:3000/orders/ HTTP/1.1
+# Content-Type: application/json
+
+# {
+#     "firstName": "Fikernew",
+#     "lastName": "Birhanu",
+#     "phone": "0948701",
+#     "location": "Addis Ababa",
+#     "id": 29
+# }
+
+# DELETE http://localhost:3000/orders/1
+
+
+# POST http://localhost:3000/auth/signup HTTP/1.1
+# Content-Type: application/json
+
+# {
+#     "username": "fikerb",
+#     "password": "Ab!23456"
+# }
+
+POST http://localhost:3000/auth/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "fikerb",
+    "password": "Ab!23456"
+}
+
+# GET http://localhost:3000/auth/ HTTP/1.1
