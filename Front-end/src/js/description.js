@@ -61,3 +61,26 @@ async function main() {
 }
 
 main();
+
+form = document.querySelector("#form");
+
+form.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  fname = document.querySelector("#first-name").value;
+  lname = document.querySelector("#last-name").value;
+  phone = document.querySelector("#phone").value;
+  LOCATION = document.querySelector("#location").value;
+
+  let result = await fetch("http://localhost:3000/orders/", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      firstName: fname,
+      lastName: lname,
+      phone: phone,
+      location: LOCATION,
+      bookId: 5,
+    }),
+  });
+  console.log(result);
+});
