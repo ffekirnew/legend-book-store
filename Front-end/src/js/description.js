@@ -79,7 +79,7 @@ form.addEventListener("submit", async (event) => {
       lastName: lname,
       phone: phone,
       location: LOCATION,
-      bookId: 5,
+      bookId: id,
     }),
   });
   console.log(result);
