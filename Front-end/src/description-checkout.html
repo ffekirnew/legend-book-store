@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Legend Books Ethiopia home page">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<title>Legend Books Admin: Atomic habits</title>
+	<script defer src="./js/description.js"></script>
+</head>
+
+<body>
+	<header class="fixed-top">
+		<nav class="navbar navbar-expand-lg shadow-sm bg-primary-subtle p-4 lead">
+			<div class="container-fluid">
+
+				<h1 class="display-6" href="#">Navbar</h1>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon bg-secondary-bg-secondary"></span>
+				</button>
+
+				<div class="collapse navbar-collapse position-relative" id="navbarNav">
+
+					<ul class="navbar-nav ms-5">
+
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="./index.html" href="./index.html">Legend</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./about.html">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./contact.html">Contact</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./admin-login.html">Admin Login</a>
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+		</nav>
+
+	</header>
+
+	<main class="container text-center p-5 mt-5">
+		<section class="card p-5" style="margin:5rem auto;">
+
+			<div class="card p-3">
+				<h2 id="bookTitle"></h2>
+			</div>
+			<div>
+				<div class="float-start me-3 w-50">
+					<img class="card float-start mt-3 w-100" id="bookImage">
+				</div>
+
+				<div class="card mt-3 p-3">
+					<ul class="list-unstyled text-start d-flex flex-column gap-3">
+						<li style="font-size: 1.3rem;">Book Name: <span style="font-size: 1.2rem;" id="bookName"></span>
+						</li>
+						<li style="font-size: 1.3rem;">Writer Name: <span style="font-size: 1.2rem;" id="bookAuthor"></span>
+						</li>
+						<li style="font-size: 1.3rem;">Category: <span style="font-size: 1.2rem;" id="category"></span></li>
+						<li style="font-size: 1.3rem;">Price: <span style="font-size: 1.2rem;" id="price"></span></li>
+
+						<li style="font-size: 1.3rem;">Background Story: <span id="backgroundStory"></span> </blockquote>
+						</li>
+
+						<li style="font-size: 1.3rem;">Example Quote: <span style="font-size: 1.2rem;" id="exampleQuote"></span></li>
+
+						<li style="font-size: 1.3rem;">
+							Description:
+							<p style="font-size: 1.2rem;" id="synopsis">
+							</p>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</section>
+
+		<section>
+
+			<audio controls>
+				<source src="./audios/atomic-habits-short-description.mp3" type="audio/ogg">
+			</audio><br>
+			<a href="./audios/atomic-habits-audio-summary-transcript.txt">Transcript</a>
+
+		</section>
+
+		<section class="input-group card mt-5 p-3 pb-5a">
+			<h2 class="mt-5 mb-3 m-auto">Want to buy the item?</h2>
+			<form action="" method="POST" class="d-flex flex-column m-auto gap-3">
+				<label for="first-name">First Name *</label>
+				<input class="form-control" type="text" name="firstName" id="first-name" required>
+				<label for="last-name">Last Name</label>
+				<input class="form-control" type="text" name="lastName" id="last-name">
+				<label for="phone">Phone *</label>
+				<input class="form-control" type="text" name="phone" id="phone" placeholder="+251"
+					aria-describedby="phone-input-box" required>
+				<p id="phone-input-box">For Example: 0978877878</p>
+				<label for="location">Location *</label>
+				<input class="form-control" type="text" name="location" id="location" required>
+				<input type="checkbox" name="agree" id="agree" required>
+				<label for="agree">I agree to recieve phone calls and/or messages about the transaction and agree to the
+					Legend Books terms of service. *</label>
+				<input class="btn btn-primary btn-lg w-25 m-auto" type="submit" name="submit" value="Buy!">
+			</form>
+		</section>
+
+	</main>
+	<footer class="bg-light py-3 shadow-lg bg-primary-subtle p-5">
+
+		<div class="container">
+			<div class="row">
+				<h1>Logo</h1>
+			</div>
+
+			<div class="row">
+				<div class="col m-auto">
+					<h5>Contact Information</h5>
+					<ul class="list-unstyled">
+						<li>Bisrate Gabriel / Nfas Silk Lafto Subcity</li>
+						<li>4 Kilo / Arada Subcity</li>
+						<li>6 Kilo / Gulele Subcity</li>
+					</ul>
+				</div>
+
+				<div class="col m-auto">
+					<h5>Follow Us</h5>
+
+					<ul class="list-unstyled">
+						<li><a href="#" class="text-decoration-none">Facebook</a></li>
+						<li><a href="#" class="text-decoration-none">LinkedIn</a></li>
+						<li><a href="#" class="text-decoration-none">Instagram</a></li>
+						<li><a href="#" class="text-decoration-none">Twitter</a></li>
+					</ul>
+
+				</div>
+			</div>
+
+
+
+		</div>
+		<div class="container text-center mt-4 mb-1">
+			<p class="text-muted text-right">Copyright &copy; 2023 Example Inc.</p>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
